@@ -1,11 +1,11 @@
-# 📊 Sales Trend Analysis (SQLite | SQL Project)
+#  Sales Trend Analysis (SQLite | SQL Project)
 
 This project analyzes **monthly sales performance** using SQL.  
 The goal is to extract **monthly revenue** and **order volume** trends from an `orders` dataset.
 
 ---
 
-## 🎯 Objective
+##  Objective
 - Analyze monthly revenue using SQL aggregations  
 - Calculate monthly order volume  
 - Group data by **year + month**  
@@ -14,14 +14,14 @@ The goal is to extract **monthly revenue** and **order volume** trends from an `
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 - **SQLite Online**
 - SQL (aggregate functions & date functions)
 - Excel (for viewing results)
 
 ---
 
-## 📁 Project Files
+##  Project Files
 | File | Description |
 |------|-------------|
 | `online_sales_orders.csv` | Source dataset containing 100 rows of order data |
@@ -31,7 +31,7 @@ The goal is to extract **monthly revenue** and **order volume** trends from an `
 
 ---
 
-## 🧵 Dataset Structure (`orders` table)
+##  Dataset Structure (`orders` table)
 - `order_id` — Primary key  
 - `order_date` — Date of purchase  
 - `product_id` — Product identifier  
@@ -39,7 +39,7 @@ The goal is to extract **monthly revenue** and **order volume** trends from an `
 
 ---
 
-## 🧠 SQL Concepts Used
+##  SQL Concepts Used
 - `strftime()` for extracting **year** and **month**
 - `SUM()` for total revenue
 - `COUNT(DISTINCT)` for order volume
@@ -49,7 +49,7 @@ The goal is to extract **monthly revenue** and **order volume** trends from an `
 
 ---
 
-## 📝 Final Query (Monthly Revenue + Order Volume)
+##  Final Query (Monthly Revenue + Order Volume)
 
 ```sql
 SELECT
@@ -77,6 +77,8 @@ SELECT
 FROM orders
 GROUP BY year, month_number
 ORDER BY year, month_number;
+
+---
 
 Final Output Preview
 Year	Month	Revenue	Orders
